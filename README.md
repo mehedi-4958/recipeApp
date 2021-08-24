@@ -2,10 +2,9 @@
 
 Recipes is a simple flutter app which shows Images and Titles of several famous recipes in a ListView using Card widget inside a custom RecipeCard. Tapping on any recipe image provides the details of the recipe along with all the ingredients and their quantity . There is also a slider to calculate the measure the ingredient quantity of a recipe while the serving is changed.
 
-![Screenshot_1629827313](https://user-images.githubusercontent.com/17931197/130667715-11b07572-f71e-4f09-8962-72eb6bd0e242.png)
-![Screenshot_1629827326](https://user-images.githubusercontent.com/17931197/130667781-565777c6-2cce-4ae5-82b6-1712cce9ded1.png)
-![Screenshot_1629827335](https://user-images.githubusercontent.com/17931197/130667805-a72f1e67-ebe7-48ac-8b42-c592227436a9.png)
-
+![Screenshot_1629827335](https://user-images.githubusercontent.com/17931197/130668943-00273270-c1da-49c1-940a-d75ad5c71949.png)
+![Screenshot_1629827313](https://user-images.githubusercontent.com/17931197/130668956-79be4452-4adc-4211-bca9-132cd0fc25a5.png)
+![Screenshot_1629827326](https://user-images.githubusercontent.com/17931197/130668960-916abdd9-2537-4a3d-99a1-735d4079953a.png)
 
 
 A few resources to get you started if this is your first Flutter project:
