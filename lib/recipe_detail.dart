@@ -47,15 +47,16 @@ class _RecipeDetailState extends State<RecipeDetail> {
               ),
             ),
             Slider(
+              min: 1,
+              max: 10,
+              divisions: 10,
+              label: '${_sliderVal * widget.recipe.servings} servings',
               value: _sliderVal.toDouble(),
               onChanged: (newValue) {
                 setState(() {
                   _sliderVal = newValue.round();
                 });
               },
-              min: 1,
-              max: 10,
-              divisions: 10,
               activeColor: Colors.green,
               inactiveColor: Colors.black,
             )

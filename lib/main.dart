@@ -10,21 +10,22 @@ class RecipeApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final ThemeData theme = ThemeData();
     return MaterialApp(
       title: 'Recipes',
-      theme: ThemeData(
-        
-        primaryColor: Colors.white,
-        accentColor: Colors.black,
+      theme: theme.copyWith(
+        colorScheme: theme.colorScheme.copyWith(
+          primary: Colors.blue,
+          secondary: Colors.black,
+        ),
       ),
-      home: MyHomePage(title: 'Recipes'),
+      home: MyHomePage(title: 'Recipe Calculator'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
-
 
   final String title;
 
@@ -45,9 +46,14 @@ class _MyHomePageState extends State<MyHomePage> {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return RecipeDetail(recipe: Recipe.samples[index]);
-                }));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return RecipeDetail(recipe: Recipe.samples[index]);
+                    },
+                  ),
+                );
               },
               child: buildRecipeCard(Recipe.samples[index]),
             );
